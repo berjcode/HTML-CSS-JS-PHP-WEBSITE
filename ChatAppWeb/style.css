@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*
+{
+    margin: 0; /* Dış Kenar Boşluğu */
+    padding: 0; /*İç Kenar boşluğu  */
+    box-sizing: border-box; /*Bir nesnenin kapladığı alan nesnenin genişliği + padding + border değerlerinin toplamıdır.  */
+    text-decoration: none; /*Çizgi gibi şeyleri siler.  */
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+display:flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+background: #f7f7f7;
+
+}
+
+
+.wrapper
+{
+    
+    background: #fff;
+    width: 450px;
+    border-radius: 16px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+/* signup form css code*/
+
+.form
+{
+    padding: 25px 30px;
+}
+
+.form header
+{
+    font-size: 25px;
+    font-weight:600;
+    padding-bottom: 10px;
+    border-bottom: 5px solid #e6e6e6;
+
+}
+
+
+.form form 
+{
+    margin: 20px 0;
+}
+
+.form form .error-txt
+{
+    color: #721c24;
+    background: #f8d7da;
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+.form form .field   
+{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form form .field input
+{
+    outline: none;
+   
+}
+
+.form form .input input
+{
+   
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.form form .field label
+{
+    color: black;
+    margin-bottom: 2px;
+}
+
+
+.form form .image input
+{
+    font-size: 17px;
+}
+
+
+.form form .button input
+{
+    margin-top: 13px;
+    height: 45px;
+    border:none;
+    font-size: 17px;
+    font-weight: 500;
+    background: rgb(211, 0, 0);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form form .field i 
+{
+    position: absolute;
+    right: 15px;
+    color: #ccc;
+    top: 70%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.form .link 
+{
+    text-align: center;
+    color: black;
+    margin: 10px 0;
+    font-size: 17px;
+
+}
+
+.form .link a
+{
+    color: blue;
+}
+
+.form .link a:hover 
+{
+    text-decoration: underline;
+}
+
+
+/*Users Page Code */
+
+
+.users
+{
+   padding: 25px 30px; 
+}
+
+.users header, .users-list a
+{
+    display: flex;
+    font-size: 20;
+    align-items: center;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid #ea0000;
+    color: black;
+}
+
+.wrapper img
+{
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+:is(.users,.users-list) .content 
+{
+    display: flex;
+    align-items: center;
+}
+:is(.users,.users-list) .details
+{
+    color: black;
+    margin-left: 15px;
+}
+
+:is(.users,.users-list) .details span
+{
+    font-size: 20px;
+    color:black;
+    font-weight: 500;
+}
+
+.users header .content img
+{
+    height: 50px;
+    width: 50px;
+}
+
+.users header .logout   
+{
+    background:black;
+    color: white;
+    font-size: 20;
+    padding: 7px 15px;
+    border-radius: 8px;
+}
+
+.users .search 
+{
+    margin:20px 0;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.users .search .text
+{
+    font-size: 18px;
+
+     
+}
+.users .search input
+{
+    position: absolute;
+    height: 42px;
+    width: 50;
+    border: 1px solid #ea0000;
+    padding: 0 13px;
+    font-size: 16px;
+    border-radius: 5px 5px 5px 5px;
+    outline: none;
+}
+
+.users .search button
+{
+    width: 43px;
+    height: 42px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: black;
+    cursor: pointer;
+    font-size: 18;
+     border-radius: 5px 5px 5px 5px;
+}
+
+.users-list
+{
+    max-height: 350px;
+    overflow-y: auto;
+}
+.users-list::-webkit-scrollbar
+{
+    width: 0px;
+}
+.users-list a
+{
+    margin-bottom: 10px;
+    page-break-after: 10px;
+    padding-right: 15px;
+    border-bottom-color: black;
+}
+
+.users-list a :last-child
+{
+    border:none;
+    margin-bottom: 0px;
+}
+
+.users-list a .content img
+{
+height: 40px;
+width: 40;
+}
+
+.users-list a .content p{
+    color: black;
+}
+.users-list a .status-btn
+{
+    font-size: 12px;
+    color: green;
+}
+/*Offline */
+.users-list a .status-btn.offline
+{
+    color: #ccc;
+}
+
+
+
