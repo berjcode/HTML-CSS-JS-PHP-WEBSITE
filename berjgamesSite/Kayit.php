@@ -36,9 +36,7 @@ require 'baglan.php';
                         <Input type="password" required class="form-control" name="password">
                     </div>
 
-                    <div class="form-group">
-                        <a href="Login.php" class="text-warning">Giriş Yap Dön </a>
-                    </div>
+                    
                     <button  href="Kayit.php" name="kayit"type="submit" class="btn">Kayıt Ol </button>
                     </form>
 

@@ -48,17 +48,18 @@
                     </div>
 
                     <div class="form-group">
-                        <a href="#" class="text-warning">Şifremi Unuttum </a>
+                        <a href="Kayit.php" class="text-warning">Kayıt Ol </a> </br>
+                        <a href="#" class="text-warning">Şifre Yenile </a>
                     </div><br>
                     
                         <button href="index.php" name ="giris" type="submit" class="btn">Giriş Yap</Button>
-                        <a href="Kayit.php"name="kayit" type="submit" class="btnKayit">Kayıt Ol</a>
+                        
                         
                     
                     </form>
 
                </div>
-
+               
 
             </div>
 

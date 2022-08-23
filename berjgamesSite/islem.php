@@ -31,7 +31,7 @@ if(isset($_POST['kayit']))
     if($add)
     {
         echo "Kayıt Başarılı, yönlendirme devam ediyor...";
-        header("Refresh:2; index.php");
+        header("Refresh:2; Login.php");
     }else
     {
         echo "Bir Hata oluştı,tekrar kontrol edin.";
@@ -54,7 +54,7 @@ if(isset($_POST['giris']))
         echo "şifrenizi girin";
     }else 
     {
-        $users_data = $db -> prepare ('SELECT * FROM login WHERE user_email= ? || user_password= ?');
+        $users_data = $db -> prepare ('SELECT * FROM login WHERE user_email= ? && user_password= ?');
         $users_data -> execute ([
             $user_email, $user_password
 
@@ -65,8 +65,7 @@ if(isset($_POST['giris']))
         {
             $_SESSION['user_email'] =$user_email;
             $_SESSION['user_password'] =$user_password;
-            echo "başarılı" ;
-            header("Refresh:2; blog.php");
+           header("Refresh:2; index.php");
            
          
 
