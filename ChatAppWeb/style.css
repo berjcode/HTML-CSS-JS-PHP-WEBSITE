@@ -124,6 +124,12 @@ background: #f7f7f7;
     cursor: pointer;
 }
 
+.form form .field i.active::before
+{
+    color:#333;
+    content:"\f070";
+}
+
 .form .link 
 {
     text-align: center;
@@ -247,7 +253,7 @@ background: #f7f7f7;
     max-height: 350px;
     overflow-y: auto;
 }
-.users-list::-webkit-scrollbar
+:is(.users-list, .chat-box)::-webkit-scrollbar
 {
     width: 0px;
 }
@@ -287,3 +293,132 @@ width: 40;
 
 
 
+/* Chat Area Code*/
+
+.chat-area header
+{
+  display: flex;
+  align-items: center;
+  padding: 18px 30px;
+  background-color: white;
+}
+
+.chat-area header .back-icon
+{
+    color: #ea0000;
+    font-size: 20px;
+    
+}
+
+.chat-area header img
+{
+    height: 50px;
+    font-weight: 50px;
+    margin: 0 15px;
+}
+
+.chat-area header  span 
+{
+    font-size: 17px;
+    font-weight: 500;
+    color: black;
+}
+
+/*ChatBox Code  */
+
+.chat-box
+{
+height: 500px;
+overflow-y: auto;
+background:white;
+padding: 10px 30px 20px 30px;
+box-shadow: inset 0 32px 32px -32px rgb(0 0 0 /5%),
+            inset 0 32px 32px -32px rgb(0 0 0 /5%) ;
+}
+
+.chat-box .chat
+{
+    margin: 15px 0;
+}
+
+.chat-box .chat p
+{
+    word-wrap: break-word;
+    padding: 8px 16px;
+    box-shadow: inset 0 32px 32px -32px rgb(0 0 0 /5%),
+                inset 0 32px 32px -32px rgb(0 0 0 /5%);
+}
+
+
+.chat-box .outgoing 
+{
+    display: flex;
+}
+
+.outgoing .details{
+    margin-left: auto;
+    max-width: calc(100% - 130px);
+}
+
+.outgoing .details p
+{
+    background: #333;
+    color: #fff;
+    border-radius: 18px 18px 18px 18px;
+}
+
+.chat-box .incoming
+{
+    display: flex;
+    align-items: center;
+}
+.chat-box .incoming img
+{
+    height: 35px;
+    width: 35px;
+}
+.incoming .details
+ {
+    margin-left: 10px;
+    margin-right: auto;
+    max-width: calc(100% - 130px);
+ }
+
+.incoming .details p
+{
+    
+    color: #333;
+    background-color: #fff;
+    border-radius: 18px 18px 18px 0;
+}
+
+
+.chat-area .typing-area
+{
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.typing-area input
+{
+    height: 45px;
+    width:  calc(100% - 58px);
+    font-size: 17px;
+    border: 1px solid #ccc;
+    padding: 0 13px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.typing-area button
+{
+    width: 55px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    font-size: 19px;
+    cursor: pointer;
+}
