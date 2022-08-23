@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
-
+/* Index.html Page Css*/
 *
 {
     margin: 0;
@@ -196,3 +196,5 @@ header ul li a
     clip-path: circle(480px at right 550px);
 
 }
+
+/*Login.html Page Css*/
