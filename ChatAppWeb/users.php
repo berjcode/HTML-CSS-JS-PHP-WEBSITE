@@ -27,8 +27,8 @@
                 <a href="#" class="logout">Çıkış Yap</a>
             </header>
             <div class="search">
-                <span class="text"> </span>
-                <input type="text" placeholder="Aramak için isim gir">
+                <span class="text"> Arama yapabilirsiniz </span>
+                <input type="text" placeholder="bir isim girin">
                 <button><i class="fas fa-search"></i></button>
             </div>
 
@@ -108,6 +108,10 @@
                 </div>
         </section>
     </div>
+
+
+
+    <script src="javascript/users.js">  </script>
 
 </body>
 

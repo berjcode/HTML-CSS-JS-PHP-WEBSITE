@@ -61,6 +61,7 @@ background: #f7f7f7;
     border-radius: 5px;
     margin-bottom: 10px;
     border: 1px solid black;
+    display: none;
 }
 
 .form form .field   
@@ -215,6 +216,7 @@ background: #f7f7f7;
     position: relative;
     align-items: center;
     justify-content: space-between;
+  
 }
 
 .users .search .text
@@ -233,6 +235,14 @@ background: #f7f7f7;
     font-size: 16px;
     border-radius: 5px 5px 5px 5px;
     outline: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.users .search input.active
+{
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .users .search button
@@ -241,11 +251,23 @@ background: #f7f7f7;
     height: 42px;
     border: none;
     outline: none;
-    color: #fff;
-    background: black;
+    color: #333;
+    background: #fff;
     cursor: pointer;
     font-size: 18;
-     border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    transition: all 0.3s ease;
+}
+
+.users .search button.active
+{
+    color: #fff;
+    background: black;
+}
+
+.users .search button.active i::before
+{
+    content: "\f00d";
 }
 
 .users-list

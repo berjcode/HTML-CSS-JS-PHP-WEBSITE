@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF8">
-    <meta name="viewport" content="width=device-with, initial-scale =1.0">
+    <meta name="viewport" content="width=device-width, initial-scale =1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> Chat App</title>
 
@@ -17,35 +17,35 @@
     <div class="wrapper">
         <section class="form signup">
                 <header>Abdullah Balıkçı Chat App</header>
-                <form action="#" >
+                <form action=""  enctype="multipart/from-data">
 
-                    <div class="error-txt"> Bu bir Hata  Mesajıdır!</div>
+                    <div class="error-txt"> Bu bir Hata  mesajidir!</div>
                         <div class="name-details">
                             <div class="field input">
                                 <label>Ad</label>
-                                <input type="text" placeholder="First Name">
+                                <input type="text" name="fname" placeholder="First Name" required>
 
                             </div>
                             <div class="field input">
                                 <label>Soyad</label>
-                                <input type="text" placeholder="Last Name">
+                                <input type="text"  name="lname" placeholder="Last Name" required>
 
                             </div>
                             <div class="field input">
                                 <label>Email </label>
-                                <input type="text" placeholder="Email">
+                                <input type="text" name="email" placeholder="Email" required>
 
                             </div>
 
                             <div class="field input">
                                 <label>Şifre</label>
-                                <input type="password" placeholder="Password">
+                                <input type="password" name="password" placeholder="Password" required>
                                 <i class="fas fa-eye"></i>
 
                             </div>
                             <div class="field image">
                                 <label>Resim Seç</label>
-                                <input type="file" >
+                                <input type="file"  name="image"  required >
 
                             </div>
 
@@ -67,6 +67,7 @@
 
 
     <script src="javascript/pass-show-hide.js"></script>
+    <script src="javascript/signup.js"></script>
 
 </body>
 
