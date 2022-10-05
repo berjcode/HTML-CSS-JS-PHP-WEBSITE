@@ -11,28 +11,77 @@ h1
 {
     color: white ;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', monospace;
     font-size: 40px;
     padding-top: 400px;
     border-bottom-style: solid;
     margin-left: 100px;
     margin-right: 100px;
    letter-spacing: 2px;
+   text-shadow: 1px 1px 1px red;
 
 }
 
 p.CenterTitleP
 {
     padding-top: 1px;
+    background-color: aliceblue;
   font-size: 18px;
-    color: white;
+    color: black;
     text-align: center;
     letter-spacing: 3px;
+    text-shadow: 1px 1px 1px ;
+    border-radius: 25px;
    /* text-decoration: underline;*/
 
   
    
  
    
+}
+div.Material-Icons
+{
+  position: relative;
+  left: 700px;
+  color: white;
+  align-items: center;
+  
+}
+
+div.Menu
+{
+  position: relative;
+margin-top: 30px;
+  left: 500px;
+  border-radius: 25px;
+  
+}
+
+li 
+{
+  display: inline;
+  float : left;
+  
+}
+
+ul
+{
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  overflow:  hidden;
+  border-radius: 25px;
+}
+
+li a 
+{
+  display:  block;
+  padding:10px 100px;
+  background-color:white;
+  
+   text-decoration: none;
+  color:black;
+
+
 }
 
