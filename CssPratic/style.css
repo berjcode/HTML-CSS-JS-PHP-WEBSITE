@@ -17,16 +17,18 @@ h1
     border-bottom-style: solid;
     margin-left: 100px;
     margin-right: 100px;
-   
+   letter-spacing: 2px;
 
 }
 
-p
+p.CenterTitleP
 {
     padding-top: 1px;
-   
+  font-size: 18px;
     color: white;
     text-align: center;
+    letter-spacing: 3px;
+   /* text-decoration: underline;*/
 
   
    
