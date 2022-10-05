@@ -1,0 +1,36 @@
+body
+{
+   
+    background-image: url(Images/BackGround.jpg);
+    
+    background-attachment: scroll;
+}
+
+
+h1 
+{
+    color: white ;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    padding-top: 400px;
+    border-bottom-style: solid;
+    margin-left: 100px;
+    margin-right: 100px;
+   
+
+}
+
+p
+{
+    padding-top: 1px;
+   
+    color: white;
+    text-align: center;
+
+  
+   
+ 
+   
+}
+
