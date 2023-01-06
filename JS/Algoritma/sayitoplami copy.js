@@ -18,3 +18,5 @@ var sayi;
 
 
   nSayiTopla(2);
+
+

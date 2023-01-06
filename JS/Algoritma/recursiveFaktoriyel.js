@@ -10,3 +10,4 @@ function recursiveFaktoriyel(a)
 }
 
 console.log(recursiveFaktoriyel());
+

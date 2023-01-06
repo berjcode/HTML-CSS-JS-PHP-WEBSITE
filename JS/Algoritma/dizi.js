@@ -26,3 +26,13 @@ for(i = 0 ; i <1000 ; i++)
 }
 
 console.log(dizi);
+
+var dizi = [];
+
+for(i=1 ; i<100;i++)
+{
+    if(i % 5 == 0)
+    {
+        console.log(i);
+    }
+}

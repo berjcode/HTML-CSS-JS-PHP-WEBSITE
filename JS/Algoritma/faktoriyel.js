@@ -1,4 +1,4 @@
-var sayi= 5;
+  var sayi= 5;
 
   var toplam = 1;
 
@@ -10,7 +10,6 @@ var sayi= 5;
 console.log(toplam);
 
 //Function
-
 
 
 //function 
